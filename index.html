@@ -9,8 +9,9 @@
 </head>
 <body>
     <div id="root">
-        <div v-for='email in arrayEmail'>
-            {{email}}
+        <h1>Lista email</h1>
+        <div v-for='email, indice in arrayEmail'>
+            {{indice + 1}} - {{email}}
         </div>
     </div>
 
